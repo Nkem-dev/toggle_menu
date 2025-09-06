@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Eligibilty Checker</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body class="m-0 p-0 overflow-x-hidden bg-amber-400 sm:m-0 sm:p-0 sm:overflow-x-hidden sm:bg-amber-400">
+
+    <div style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" class="w-[90%] border-2 h-[70vh] m-auto sm:w-[40%] rounded-[10px] sm:border-[#ffffff] mt-[100px] sm:border-none sm:h-[60vh] sm:m-auto sm:mt-[200px] sm:rounded-2xl bg-[#1b1b1b]">
+        <h1 class=" py-4 text-center text-[1.5rem] text-[#ffffff] sm:py-7 sm:text-center sm:text-[3rem]  sm:text-[#ffffff] font-Poppins ">Vote Eligibility Checker</h1>
+        <form class="px-6 sm:px-15"  id="voteChecker" >
+
+            <div>
+                <label class="text-[1rem] text-[#ffffff]   sm:text-[1.6rem] sm:text-[#ffffff] font-Poppins" for="name">Name</label> <br>
+                <input id="name" name="name" class=" border-2 w-[100%] outline-none border-amber-400 px-2 rounded-[5px]
+                 py-2 sm:w-[90%] sm:h-[7vh] sm:border-2 sm:text-[1.2rem] font-Poppins sm:px-3  sm:rounded-[10px] text-[#ffffff]" type="text" placeholder="Enter Your Name" required>
+            </div>
+
+             <div class="mt-5 sm:mt-10">
+                <label class="text-[1rem] text-[#ffffff] sm:text-[1.6rem] sm:text-[#ffffff]  font-Poppins"  for="age">Age</label> <br>
+                <input min="0" id="age" name="age" class=" border-2 w-[100%] outline-none border-amber-400 
+                 py-2 px-2  sm:w-[90%] sm:h-[7vh] sm:border-2 sm:text-[1.2rem] font-Poppins sm:px-3 sm:rounded-[10px] rounded-[5px] text-[#ffffff]" type="number" placeholder="Enter Your Age" required>
+            </div>
+
+            <div class="mt-7 sm:mt-10">
+                <button class=" cursor-pointer rounded-[5px] hover:bg-amber-400 border-2 outline-none py-3  px-10 border-amber-400 font-Poppins text-[#ffffff]
+                  sm:text-[#ffffff] sm:rounded-[10px] sm:text-[1.6rem] sm:border-2 sm:py-4 sm:px-20" type="submit">Submit</button>
+            </div>
+
+            <p class="text-[1.2rem] text-[#ffffff]  sm:text-2xl sm:text-[#ffffff] font-Poppins" id="result"></p>
+
+            
+        </form>
+    </div>
+
+    <script src="js/voteeligibility.js"></script>
+    
+    
+</body>
+</html>
