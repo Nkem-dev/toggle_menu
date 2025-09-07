@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<style>
+    .container{
+        text-align: center;
+    }
+    h3{
+        color: #000000;
+        font-size: 4rem;
+    }
+
+    h2{
+        color: blue;
+        font-size:4rem;
+    }
+
+    button{
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+</style>
+<body>
+    <div class="container">
+        <div>
+            <h3>Click the button!</h3>
+        </div>
+
+        <div>
+            <h2 id="count">0</h2>
+        </div>
+
+        <div>
+            <button onclick="increaseCount()">+</button>
+             <button onclick="decreaseCount()">-</button>
+             <button onclick="resetCount()">Reset</button>
+        </div>
+    </div>
+
+
+    <h2>Theme toggle</h2>
+    <button id="themeToggleButton">Toggle theme</button> 
+
+   
+    <script src="js/theme.js"></script>
+</body>
+</html>
